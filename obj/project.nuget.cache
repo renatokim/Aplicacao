@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "z2kAr7PafucVZOwW+e+h0p3fYxurIq9o3X200Kz4G7EjVh2nIlI8oUKzi/Jn/r/AtKsSKLR45sJ0/t/SmC5WHA==",
+  "success": true,
+  "projectFilePath": "/home/renato/Downloads/Aplicacao/Aplicacao.csproj",
+  "expectedPackageFiles": [
+    "/home/renato/.nuget/packages/microsoft.extensions.configuration/3.1.9/microsoft.extensions.configuration.3.1.9.nupkg.sha512",
+    "/home/renato/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.9/microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
+    "/home/renato/.nuget/packages/microsoft.extensions.configuration.binder/3.1.9/microsoft.extensions.configuration.binder.3.1.9.nupkg.sha512",
+    "/home/renato/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.9/microsoft.extensions.dependencyinjection.3.1.9.nupkg.sha512",
+    "/home/renato/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.9/microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
+    "/home/renato/.nuget/packages/microsoft.extensions.http/3.1.9/microsoft.extensions.http.3.1.9.nupkg.sha512",
+    "/home/renato/.nuget/packages/microsoft.extensions.logging/3.1.9/microsoft.extensions.logging.3.1.9.nupkg.sha512",
+    "/home/renato/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.9/microsoft.extensions.logging.abstractions.3.1.9.nupkg.sha512",
+    "/home/renato/.nuget/packages/microsoft.extensions.options/3.1.9/microsoft.extensions.options.3.1.9.nupkg.sha512",
+    "/home/renato/.nuget/packages/microsoft.extensions.primitives/3.1.9/microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "/home/renato/.nuget/packages/prometheus-net/6.0.0/prometheus-net.6.0.0.nupkg.sha512",
+    "/home/renato/.nuget/packages/prometheus-net.aspnetcore/6.0.0/prometheus-net.aspnetcore.6.0.0.nupkg.sha512",
+    "/home/renato/.nuget/packages/prometheus-net.dotnetruntime/4.2.4/prometheus-net.dotnetruntime.4.2.4.nupkg.sha512"
+  ],
+  "logs": []
+}

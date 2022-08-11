@@ -7,9 +7,9 @@ namespace Aplicacao.Controllers;
 
 public class PessoaController : Controller
 {
-    private static readonly Counter contPessoas = Metrics.CreateCounter("http_requests_total", "Total de requisições");
-    private static readonly Gauge JobsInQueue = Metrics.CreateGauge("myapp_jobs_queued", "Number of jobs waiting for processing in the queue.");
-    private static readonly Histogram OrderValueHistogram = Metrics
+    private static readonly Counter counter = Metrics.CreateCounter("http_requests_total", "Total de requisições");
+    private static readonly Gauge gauge = Metrics.CreateGauge("myapp_jobs_queued", "Number of jobs waiting for processing in the queue.");
+    private static readonly Histogram histogram = Metrics
         .CreateHistogram("myapp_order_value_usd", "Histogram of received order values (in USD).",
         new HistogramConfiguration
         {
@@ -33,13 +33,13 @@ public class PessoaController : Controller
 
         ViewData["Random"] = random;
 
-        OrderValueHistogram.Observe(random);
+        histogram.Observe(random);
         return View();
     }
 
     public IActionResult Index()
     {
-        contPessoas.Inc();
+        counter.Inc();
         return View();
     }
 
@@ -50,7 +50,7 @@ public class PessoaController : Controller
 
         ViewData["Random"] = random;
 
-        JobsInQueue.Inc(random);
+        gauge.Inc(random);
        return View();
     }
 
@@ -61,7 +61,7 @@ public class PessoaController : Controller
 
         ViewData["Random"] = random;
 
-        JobsInQueue.Dec(random);
+        gauge.Dec(random);
        return View();
     }    
 

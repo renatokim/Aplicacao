@@ -1,4 +1,5 @@
 /home/renato/Downloads/Aplicacao/dist/Aplicacao
+/home/renato/Downloads/Aplicacao/dist/dist/dist/dist/dist/dist/dist/web.config
 /home/renato/Downloads/Aplicacao/dist/dist/dist/dist/dist/dist/web.config
 /home/renato/Downloads/Aplicacao/dist/dist/dist/dist/dist/web.config
 /home/renato/Downloads/Aplicacao/dist/dist/dist/dist/web.config
@@ -26,6 +27,10 @@
 /home/renato/Downloads/Aplicacao/dist/dist/dist/dist/dist/dist/Aplicacao.runtimeconfig.json
 /home/renato/Downloads/Aplicacao/dist/dist/dist/dist/dist/dist/appsettings.Development.json
 /home/renato/Downloads/Aplicacao/dist/dist/dist/dist/dist/dist/appsettings.json
+/home/renato/Downloads/Aplicacao/dist/dist/dist/dist/dist/dist/dist/Aplicacao.deps.json
+/home/renato/Downloads/Aplicacao/dist/dist/dist/dist/dist/dist/dist/Aplicacao.runtimeconfig.json
+/home/renato/Downloads/Aplicacao/dist/dist/dist/dist/dist/dist/dist/appsettings.Development.json
+/home/renato/Downloads/Aplicacao/dist/dist/dist/dist/dist/dist/dist/appsettings.json
 /home/renato/Downloads/Aplicacao/dist/Aplicacao.dll
 /home/renato/Downloads/Aplicacao/dist/Aplicacao.deps.json
 /home/renato/Downloads/Aplicacao/dist/Aplicacao.runtimeconfig.json

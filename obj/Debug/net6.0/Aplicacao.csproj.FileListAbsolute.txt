@@ -63,3 +63,8 @@
 /home/renato/Downloads/Aplicacao/bin/Debug/net6.0/dist/dist/dist/dist/dist/Aplicacao.runtimeconfig.json
 /home/renato/Downloads/Aplicacao/bin/Debug/net6.0/dist/dist/dist/dist/dist/appsettings.Development.json
 /home/renato/Downloads/Aplicacao/bin/Debug/net6.0/dist/dist/dist/dist/dist/appsettings.json
+/home/renato/Downloads/Aplicacao/bin/Debug/net6.0/dist/dist/dist/dist/dist/dist/web.config
+/home/renato/Downloads/Aplicacao/bin/Debug/net6.0/dist/dist/dist/dist/dist/dist/Aplicacao.deps.json
+/home/renato/Downloads/Aplicacao/bin/Debug/net6.0/dist/dist/dist/dist/dist/dist/Aplicacao.runtimeconfig.json
+/home/renato/Downloads/Aplicacao/bin/Debug/net6.0/dist/dist/dist/dist/dist/dist/appsettings.Development.json
+/home/renato/Downloads/Aplicacao/bin/Debug/net6.0/dist/dist/dist/dist/dist/dist/appsettings.json

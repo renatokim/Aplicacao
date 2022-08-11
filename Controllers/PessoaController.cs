@@ -9,16 +9,33 @@ public class PessoaController : Controller
 {
     private static readonly Counter contPessoas = Metrics.CreateCounter("http_requests_total", "Total de requisições");
     private static readonly Gauge JobsInQueue = Metrics.CreateGauge("myapp_jobs_queued", "Number of jobs waiting for processing in the queue.");
-    private static readonly Summary RequestSizeSummary = Metrics.CreateSummary("myapp_request_size_bytes", "Summary of request sizes (in bytes) over last 10 minutes.", new SummaryConfiguration
+    private static readonly Histogram OrderValueHistogram = Metrics
+        .CreateHistogram("myapp_order_value_usd", "Histogram of received order values (in USD).",
+        new HistogramConfiguration
         {
-            Objectives = new[]
-            {
-                new QuantileEpsilonPair(0.5, 0.01),
-                new QuantileEpsilonPair(0.8, 0.05),
-                new QuantileEpsilonPair(0.90, 0.8),
-                new QuantileEpsilonPair(0.99, 0.9),
-            }
+            Buckets = Histogram.LinearBuckets(start: 10, width: 10, count: 10)
         });
+    private static readonly Summary RequestSizeSummary = Metrics.CreateSummary("myapp_request_size_bytes", "Summary of request sizes (in bytes) over last 10 minutes.", new SummaryConfiguration
+    {
+        Objectives = new[]
+        {
+            new QuantileEpsilonPair(0.5, 0.01),
+            new QuantileEpsilonPair(0.8, 0.05),
+            new QuantileEpsilonPair(0.90, 0.8),
+            new QuantileEpsilonPair(0.99, 0.9),
+        }
+    });
+
+    public IActionResult HistogramView()
+    {
+        Random randNum = new Random();
+        var random = randNum.Next(100);
+
+        ViewData["Random"] = random;
+
+        OrderValueHistogram.Observe(random);
+        return View();
+    }
 
     public IActionResult Index()
     {

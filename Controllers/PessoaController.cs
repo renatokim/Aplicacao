@@ -29,7 +29,7 @@ public class PessoaController : Controller
     public IActionResult HistogramView()
     {
         Random randNum = new Random();
-        var random = randNum.Next(100);
+        var random = randNum.Next(200);
 
         ViewData["Random"] = random;
 

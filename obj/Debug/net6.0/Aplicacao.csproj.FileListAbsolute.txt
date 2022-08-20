@@ -38,8 +38,3 @@
 /home/renato/Downloads/Aplicacao/obj/Debug/net6.0/Aplicacao.pdb
 /home/renato/Downloads/Aplicacao/obj/Debug/net6.0/Aplicacao.genruntimeconfig.cache
 /home/renato/Downloads/Aplicacao/obj/Debug/net6.0/ref/Aplicacao.dll
-/home/renato/Downloads/Aplicacao/bin/Debug/net6.0/dist/web.config
-/home/renato/Downloads/Aplicacao/bin/Debug/net6.0/dist/Aplicacao.deps.json
-/home/renato/Downloads/Aplicacao/bin/Debug/net6.0/dist/Aplicacao.runtimeconfig.json
-/home/renato/Downloads/Aplicacao/bin/Debug/net6.0/dist/appsettings.Development.json
-/home/renato/Downloads/Aplicacao/bin/Debug/net6.0/dist/appsettings.json

@@ -10,11 +10,11 @@
         "projectUniqueName": "/home/renato/Downloads/Aplicacao/Aplicacao.csproj",
         "projectName": "Aplicacao",
         "projectPath": "/home/renato/Downloads/Aplicacao/Aplicacao.csproj",
-        "packagesPath": "/root/.nuget/packages/",
+        "packagesPath": "/home/renato/.nuget/packages/",
         "outputPath": "/home/renato/Downloads/Aplicacao/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/root/.nuget/NuGet/NuGet.Config"
+          "/home/renato/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

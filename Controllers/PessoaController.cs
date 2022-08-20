@@ -7,15 +7,15 @@ namespace Aplicacao.Controllers;
 
 public class PessoaController : Controller
 {
-    private static readonly Counter counter = Metrics.CreateCounter("http_requests_total", "Total de requisições");
-    private static readonly Gauge gauge = Metrics.CreateGauge("myapp_jobs_queued", "Number of jobs waiting for processing in the queue.");
+    private static readonly Counter counter = Metrics.CreateCounter("counter_requests_total", "Total de requisições");
+    private static readonly Gauge gauge = Metrics.CreateGauge("gauge_requests_jobs", "Número de Jobs");
     private static readonly Histogram histogram = Metrics
-        .CreateHistogram("myapp_order_value_usd", "Histogram of received order values (in USD).",
+        .CreateHistogram("histogram_requests_value", "Valor dos Histogramas",
         new HistogramConfiguration
         {
             Buckets = Histogram.LinearBuckets(start: 10, width: 10, count: 10)
         });
-    private static readonly Summary RequestSizeSummary = Metrics.CreateSummary("myapp_request_size_bytes", "Summary of request sizes (in bytes) over last 10 minutes.", new SummaryConfiguration
+    private static readonly Summary summary = Metrics.CreateSummary("summary_request_size", "Valor dos Summary's", new SummaryConfiguration
     {
         Objectives = new[]
         {
@@ -72,7 +72,7 @@ public class PessoaController : Controller
 
         ViewData["Random"] = random;
 
-        RequestSizeSummary.Observe(random);
+        summary.Observe(random);
         
        return View();
     }     

@@ -9,7 +9,6 @@ public class HomeController : Controller
 {
     private static readonly Counter ContHome = Metrics.CreateCounter("home_requisicoes_total", "Total de requisições Home");
     private static readonly Counter ContPrivace = Metrics.CreateCounter("privacy_requisicoes_total", "Total de requisições Home");
-
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
